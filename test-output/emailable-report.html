@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">E-Commerce</a></td><td class="num">10</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">110,433</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">E-Commerce &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">TestFeatures.TestAddToCartOperations</td><td><a href="#m0">refreshPageAfterAddingItemsToCart</a></td><td rowspan="1">1736798435075</td><td rowspan="1">1355</td></tr><tr class="failedodd"><td rowspan="1">TestFeatures.TestProceedToCheckout</td><td><a href="#m1">shouldDisableCheckoutButtonWhenNoProducts</a></td><td rowspan="1">1736798485647</td><td rowspan="1">160</td></tr><tr><th colspan="4">E-Commerce &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">TestFeatures.TestAddToCartOperations</td><td><a href="#m2">testAddingTextAfterAddingItems</a></td><td rowspan="1">1736798442124</td><td rowspan="1">155</td></tr><tr class="passedodd"><td rowspan="1">TestFeatures.TestBuyMoreItems</td><td><a href="#m3">checkAddingManyItemsToCart</a></td><td rowspan="1">1736798448392</td><td rowspan="1">1190</td></tr><tr class="passedeven"><td rowspan="1">TestFeatures.TestBuyOneItem</td><td><a href="#m4">checkAddingOneItemToCart</a></td><td rowspan="1">1736798467058</td><td rowspan="1">567</td></tr><tr class="passedodd"><td rowspan="1">TestFeatures.TestClearItemInCart</td><td><a href="#m5">ClearProductFromCart</a></td><td rowspan="1">1736798473412</td><td rowspan="1">397</td></tr><tr class="passedeven"><td rowspan="1">TestFeatures.TestLandingPurchasingPage</td><td><a href="#m6">getCartInfo</a></td><td rowspan="1">1736798479966</td><td rowspan="1">2</td></tr><tr class="passedodd"><td rowspan="1">TestFeatures.TestProceedToCheckout</td><td><a href="#m7">shouldPlaceOrderSuccessfully</a></td><td rowspan="1">1736798492716</td><td rowspan="1">2607</td></tr><tr class="passedeven"><td rowspan="4">TestFeatures.TestSearchPage</td><td><a href="#m8">testNegativeSearch</a></td><td rowspan="2">1736798499531</td><td rowspan="2">3303</td></tr><tr class="passedeven"><td><a href="#m9">testNegativeSearch</a></td></tr><tr class="passedeven"><td><a href="#m10">testPositiveSearch</a></td><td rowspan="2">1736798531731</td><td rowspan="2">7524</td></tr><tr class="passedeven"><td><a href="#m11">testPositiveSearch</a></td></tr></tbody>
+</table>
+<h2>E-Commerce</h2><h3 id="m0">TestFeatures.TestAddToCartOperations#refreshPageAfterAddingItemsToCart</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Product &apos;Carrot&apos; not found in the cart! expected [true] but found [false]
+	at TestFeatures.TestAddToCartOperations.verifyCartContents(TestAddToCartOperations.java:47)
+	at TestFeatures.TestAddToCartOperations.refreshPageAfterAddingItemsToCart(TestAddToCartOperations.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">TestFeatures.TestProceedToCheckout#shouldDisableCheckoutButtonWhenNoProducts</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Checkout button should be disabled when no products are in the cart. expected [false] but found [true]
+	at TestFeatures.TestProceedToCheckout.shouldDisableCheckoutButtonWhenNoProducts(TestProceedToCheckout.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">TestFeatures.TestAddToCartOperations#testAddingTextAfterAddingItems</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">TestFeatures.TestBuyMoreItems#checkAddingManyItemsToCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">TestFeatures.TestBuyOneItem#checkAddingOneItemToCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">TestFeatures.TestClearItemInCart#ClearProductFromCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">TestFeatures.TestLandingPurchasingPage#getCartInfo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">TestFeatures.TestProceedToCheckout#shouldPlaceOrderSuccessfully</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">TestFeatures.TestSearchPage#testNegativeSearch</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>InvalidProduct</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">TestFeatures.TestSearchPage#testNegativeSearch</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>rr,</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">TestFeatures.TestSearchPage#testPositiveSearch</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Tomato</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">TestFeatures.TestSearchPage#testPositiveSearch</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>rr</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

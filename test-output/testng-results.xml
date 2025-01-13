@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="12" passed="10" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-01-13T22:00:28 EET" name="Suite" finished-at="2025-01-13T22:02:19 EET" duration-ms="110433">
+    <groups>
+    </groups>
+    <test started-at="2025-01-13T22:00:28 EET" name="E-Commerce" finished-at="2025-01-13T22:02:19 EET" duration-ms="110433">
+      <class name="TestFeatures.TestBuyOneItem">
+        <test-method is-config="true" signature="lanuchApplication()[pri:0, instance:TestFeatures.TestBuyOneItem@e19bb76]" started-at="2025-01-13T22:00:49 EET" name="lanuchApplication" finished-at="2025-01-13T22:01:07 EET" duration-ms="17474" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lanuchApplication -->
+        <test-method signature="checkAddingOneItemToCart()[pri:0, instance:TestFeatures.TestBuyOneItem@e19bb76]" started-at="2025-01-13T22:01:07 EET" name="checkAddingOneItemToCart" finished-at="2025-01-13T22:01:07 EET" duration-ms="567" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAddingOneItemToCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestFeatures.TestBuyOneItem@e19bb76]" started-at="2025-01-13T22:01:07 EET" name="tearDown" finished-at="2025-01-13T22:01:07 EET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestFeatures.TestBuyOneItem -->
+      <class name="TestFeatures.TestBuyMoreItems">
+        <test-method is-config="true" signature="lanuchApplication()[pri:0, instance:TestFeatures.TestBuyMoreItems@4f1bfe23]" started-at="2025-01-13T22:00:42 EET" name="lanuchApplication" finished-at="2025-01-13T22:00:48 EET" duration-ms="6110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lanuchApplication -->
+        <test-method signature="checkAddingManyItemsToCart()[pri:0, instance:TestFeatures.TestBuyMoreItems@4f1bfe23]" started-at="2025-01-13T22:00:48 EET" name="checkAddingManyItemsToCart" finished-at="2025-01-13T22:00:49 EET" duration-ms="1190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAddingManyItemsToCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestFeatures.TestBuyMoreItems@4f1bfe23]" started-at="2025-01-13T22:00:49 EET" name="tearDown" finished-at="2025-01-13T22:00:49 EET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestFeatures.TestBuyMoreItems -->
+      <class name="TestFeatures.TestProceedToCheckout">
+        <test-method is-config="true" signature="lanuchApplication()[pri:0, instance:TestFeatures.TestProceedToCheckout@61a88b8c]" started-at="2025-01-13T22:01:19 EET" name="lanuchApplication" finished-at="2025-01-13T22:01:25 EET" duration-ms="5676" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lanuchApplication -->
+        <test-method signature="shouldDisableCheckoutButtonWhenNoProducts()[pri:0, instance:TestFeatures.TestProceedToCheckout@61a88b8c]" started-at="2025-01-13T22:01:25 EET" name="shouldDisableCheckoutButtonWhenNoProducts" finished-at="2025-01-13T22:01:25 EET" duration-ms="160" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Checkout button should be disabled when no products are in the cart. expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Checkout button should be disabled when no products are in the cart. expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertFalse(Assert.java:79)
+at TestFeatures.TestProceedToCheckout.shouldDisableCheckoutButtonWhenNoProducts(TestProceedToCheckout.java:20)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldDisableCheckoutButtonWhenNoProducts -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestFeatures.TestProceedToCheckout@61a88b8c]" started-at="2025-01-13T22:01:26 EET" name="tearDown" finished-at="2025-01-13T22:01:26 EET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="lanuchApplication()[pri:0, instance:TestFeatures.TestProceedToCheckout@61a88b8c]" started-at="2025-01-13T22:01:26 EET" name="lanuchApplication" finished-at="2025-01-13T22:01:32 EET" duration-ms="6632" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lanuchApplication -->
+        <test-method signature="shouldPlaceOrderSuccessfully()[pri:0, instance:TestFeatures.TestProceedToCheckout@61a88b8c]" started-at="2025-01-13T22:01:32 EET" name="shouldPlaceOrderSuccessfully" finished-at="2025-01-13T22:01:35 EET" duration-ms="2607" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldPlaceOrderSuccessfully -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestFeatures.TestProceedToCheckout@61a88b8c]" started-at="2025-01-13T22:01:35 EET" name="tearDown" finished-at="2025-01-13T22:01:35 EET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestFeatures.TestProceedToCheckout -->
+      <class name="TestFeatures.TestClearItemInCart">
+        <test-method is-config="true" signature="lanuchApplication()[pri:0, instance:TestFeatures.TestClearItemInCart@512535ff]" started-at="2025-01-13T22:01:07 EET" name="lanuchApplication" finished-at="2025-01-13T22:01:13 EET" duration-ms="5785" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lanuchApplication -->
+        <test-method signature="ClearProductFromCart()[pri:0, instance:TestFeatures.TestClearItemInCart@512535ff]" started-at="2025-01-13T22:01:13 EET" name="ClearProductFromCart" finished-at="2025-01-13T22:01:13 EET" duration-ms="397" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClearProductFromCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestFeatures.TestClearItemInCart@512535ff]" started-at="2025-01-13T22:01:13 EET" name="tearDown" finished-at="2025-01-13T22:01:13 EET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestFeatures.TestClearItemInCart -->
+      <class name="TestFeatures.TestLandingPurchasingPage">
+        <test-method is-config="true" signature="lanuchApplication()[pri:0, instance:TestFeatures.TestLandingPurchasingPage@71529963]" started-at="2025-01-13T22:01:13 EET" name="lanuchApplication" finished-at="2025-01-13T22:01:19 EET" duration-ms="6155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lanuchApplication -->
+        <test-method signature="getCartInfo()[pri:0, instance:TestFeatures.TestLandingPurchasingPage@71529963]" started-at="2025-01-13T22:01:19 EET" name="getCartInfo" finished-at="2025-01-13T22:01:19 EET" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCartInfo -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestFeatures.TestLandingPurchasingPage@71529963]" started-at="2025-01-13T22:01:19 EET" name="tearDown" finished-at="2025-01-13T22:01:19 EET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestFeatures.TestLandingPurchasingPage -->
+      <class name="TestFeatures.TestSearchPage">
+        <test-method is-config="true" signature="lanuchApplication()[pri:0, instance:TestFeatures.TestSearchPage@22295ec4]" started-at="2025-01-13T22:01:35 EET" name="lanuchApplication" finished-at="2025-01-13T22:01:39 EET" duration-ms="4204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lanuchApplication -->
+        <test-method signature="testNegativeSearch(java.lang.String)[pri:0, instance:TestFeatures.TestSearchPage@22295ec4]" started-at="2025-01-13T22:01:39 EET" name="testNegativeSearch" data-provider="negativeSearchData" finished-at="2025-01-13T22:01:42 EET" duration-ms="3303" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[InvalidProduct]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNegativeSearch -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestFeatures.TestSearchPage@22295ec4]" started-at="2025-01-13T22:01:42 EET" name="tearDown" finished-at="2025-01-13T22:01:42 EET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="lanuchApplication()[pri:0, instance:TestFeatures.TestSearchPage@22295ec4]" started-at="2025-01-13T22:01:42 EET" name="lanuchApplication" finished-at="2025-01-13T22:01:58 EET" duration-ms="15545" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lanuchApplication -->
+        <test-method signature="testNegativeSearch(java.lang.String)[pri:0, instance:TestFeatures.TestSearchPage@22295ec4]" started-at="2025-01-13T22:01:58 EET" name="testNegativeSearch" data-provider="negativeSearchData" finished-at="2025-01-13T22:01:58 EET" duration-ms="429" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[rr,]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNegativeSearch -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestFeatures.TestSearchPage@22295ec4]" started-at="2025-01-13T22:01:58 EET" name="tearDown" finished-at="2025-01-13T22:01:58 EET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="lanuchApplication()[pri:0, instance:TestFeatures.TestSearchPage@22295ec4]" started-at="2025-01-13T22:01:58 EET" name="lanuchApplication" finished-at="2025-01-13T22:02:05 EET" duration-ms="6795" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lanuchApplication -->
+        <test-method signature="testPositiveSearch(java.lang.String)[pri:0, instance:TestFeatures.TestSearchPage@22295ec4]" started-at="2025-01-13T22:02:05 EET" name="testPositiveSearch" data-provider="positiveSearchData" finished-at="2025-01-13T22:02:06 EET" duration-ms="391" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[rr]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPositiveSearch -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestFeatures.TestSearchPage@22295ec4]" started-at="2025-01-13T22:02:06 EET" name="tearDown" finished-at="2025-01-13T22:02:06 EET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="lanuchApplication()[pri:0, instance:TestFeatures.TestSearchPage@22295ec4]" started-at="2025-01-13T22:02:06 EET" name="lanuchApplication" finished-at="2025-01-13T22:02:11 EET" duration-ms="5728" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lanuchApplication -->
+        <test-method signature="testPositiveSearch(java.lang.String)[pri:0, instance:TestFeatures.TestSearchPage@22295ec4]" started-at="2025-01-13T22:02:11 EET" name="testPositiveSearch" data-provider="positiveSearchData" finished-at="2025-01-13T22:02:19 EET" duration-ms="7524" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Tomato]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPositiveSearch -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestFeatures.TestSearchPage@22295ec4]" started-at="2025-01-13T22:02:19 EET" name="tearDown" finished-at="2025-01-13T22:02:19 EET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestFeatures.TestSearchPage -->
+      <class name="TestFeatures.TestAddToCartOperations">
+        <test-method is-config="true" signature="lanuchApplication()[pri:0, instance:TestFeatures.TestAddToCartOperations@2f1de2d6]" started-at="2025-01-13T22:00:28 EET" name="lanuchApplication" finished-at="2025-01-13T22:00:35 EET" duration-ms="6190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lanuchApplication -->
+        <test-method signature="refreshPageAfterAddingItemsToCart()[pri:0, instance:TestFeatures.TestAddToCartOperations@2f1de2d6]" started-at="2025-01-13T22:00:35 EET" name="refreshPageAfterAddingItemsToCart" finished-at="2025-01-13T22:00:36 EET" duration-ms="1355" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Product 'Carrot' not found in the cart! expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Product 'Carrot' not found in the cart! expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at TestFeatures.TestAddToCartOperations.verifyCartContents(TestAddToCartOperations.java:47)
+at TestFeatures.TestAddToCartOperations.refreshPageAfterAddingItemsToCart(TestAddToCartOperations.java:32)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refreshPageAfterAddingItemsToCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestFeatures.TestAddToCartOperations@2f1de2d6]" started-at="2025-01-13T22:00:36 EET" name="tearDown" finished-at="2025-01-13T22:00:36 EET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="lanuchApplication()[pri:0, instance:TestFeatures.TestAddToCartOperations@2f1de2d6]" started-at="2025-01-13T22:00:36 EET" name="lanuchApplication" finished-at="2025-01-13T22:00:42 EET" duration-ms="5461" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lanuchApplication -->
+        <test-method signature="testAddingTextAfterAddingItems()[pri:0, instance:TestFeatures.TestAddToCartOperations@2f1de2d6]" started-at="2025-01-13T22:00:42 EET" name="testAddingTextAfterAddingItems" finished-at="2025-01-13T22:00:42 EET" duration-ms="155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddingTextAfterAddingItems -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestFeatures.TestAddToCartOperations@2f1de2d6]" started-at="2025-01-13T22:00:42 EET" name="tearDown" finished-at="2025-01-13T22:00:42 EET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestFeatures.TestAddToCartOperations -->
+    </test> <!-- E-Commerce -->
+  </suite> <!-- Suite -->
+</testng-results>

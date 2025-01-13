@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="testingComponents.ListenersNG"></listener>
+	</listeners>
+	<test thread-count="5" name="E-Commerce">
+		<classes>
+			<class name="TestFeatures.TestAddToCartOperations" />
+			<class name="TestFeatures.TestBuyMoreItems" />
+			<class name="TestFeatures.TestBuyOneItem" />
+			<class name="TestFeatures.TestClearItemInCart" />
+			<class name="TestFeatures.TestLandingPurchasingPage" />
+			<class name="TestFeatures.TestProceedToCheckout" />
+			<class name="TestFeatures.TestSearchPage" />
+		</classes>
+	</test> <!-- Test -->
+
+</suite> <!-- Suite -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
